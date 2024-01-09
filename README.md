@@ -69,4 +69,6 @@ nltk.download('punkt')
 6. **Readme.md File**
     - Write a `readme.md` file explaining your algorithm. Including the mathematics behind it.
 
+### ⚠️ **Caution**: Always run `git pull` before doing something, and always keep your fork in sync.
+
 _All the best 👍🏻_
