@@ -6,3 +6,4 @@ Language used :- Python
 programs:
     1. Affine cipher brute force decoder "WARNING USE AT YOUR OWN RISC MAY CAUSE YOUR LAPTOP TO BURN"
     2. Pig latin encoder and decoder
+    3. Cisco-encryption -> This is a self made encryption algorithm
