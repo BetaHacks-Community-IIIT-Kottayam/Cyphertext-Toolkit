@@ -1,0 +1,9 @@
+Name :- Kanishk mittal
+Roll_number:- 2023BCY0003
+institute ID :- kanishk23bcy3@iiitkottayam.ac.in
+Language used :- Python
+
+programs:
+    1. Affine cipher brute force decoder "WARNING USE AT YOUR OWN RISC MAY CAUSE YOUR LAPTOP TO BURN"
+    2. Pig latin encoder and decoder
+    3. Cisco-encryption -> This is a self made encryption algorithm
