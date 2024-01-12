@@ -1,8 +1,8 @@
 
 
-import random
-import string
-import sys
+# import random
+# import string
+# import sys
 
 val = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
 roman_dict = {'A': 1, 'R': 5, 'U': 10, 's': 50, 'H': 100, 'M': 500, 'b': 1000}
