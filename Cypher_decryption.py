@@ -7,6 +7,8 @@ def custom_decipher(encrypted_text):
             else:
                 symbols = "!@#$%^&*()_+-=[]{}|;':,.<>?/"
                 decrypted_text += symbols[ord(char) - ord('A')]
+        elif char.isspace():  # handle spaces
+            decrypted_text += ' '
         else:
             symbols = "!@#$%^&*()_+-=[]{}|;':,.<>?/"
             decrypted_text += chr(ord('A') + symbols.index(char))
