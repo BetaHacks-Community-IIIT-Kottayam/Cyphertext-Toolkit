@@ -7,6 +7,8 @@ def custom_cipher(text):
             else:  # odd position
                 symbols = "!@#$%^&*()_+-=[]{}|;':,.<>?/"
                 encrypted_text += symbols[ord(char) - ord('A')]
+        elif char.isspace():  # handle spaces
+            encrypted_text += ' '
     return encrypted_text
 def main():
     plaintext = input("Enter the text to encrypt: ").upper()
