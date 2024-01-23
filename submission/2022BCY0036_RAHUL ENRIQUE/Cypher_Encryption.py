@@ -1,14 +1,19 @@
+import random
 def custom_cipher(text):
-    encrypted_text = ""
+    shift = random.randint(10, 99) 
+    shift_start = shift % 10  
+    shift_end = shift // 10  
+    encrypted_text = str(shift_start)
     for i, char in enumerate(text):
         if char.isalpha():
-            if i % 2 == 0:  # even position
-                encrypted_text += chr((ord(char) - ord('A') + 5) % 26 + ord('A'))
+            if i % 2 == 0:
+                encrypted_text += chr((ord(char) - ord('A') + shift) % 26 + ord('A'))
             else:  # odd position
                 symbols = "!@#$%^&*()_+-=[]{}|;':,.<>?/"
                 encrypted_text += symbols[ord(char) - ord('A')]
-        elif char.isspace():  # handle spaces
+        elif char.isspace():
             encrypted_text += ' '
+    encrypted_text += str(shift_end) 
     return encrypted_text
 def main():
     plaintext = input("Enter the text to encrypt: ").upper()
