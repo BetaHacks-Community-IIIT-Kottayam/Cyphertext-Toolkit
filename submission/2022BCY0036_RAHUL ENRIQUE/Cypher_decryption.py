@@ -1,9 +1,12 @@
 def custom_decipher(encrypted_text):
+    shift_start = int(encrypted_text[0])
+    shift_end = int(encrypted_text[-1]) 
+    shift = shift_end * 10 + shift_start
     decrypted_text = ""
-    for i, char in enumerate(encrypted_text):
+    for i, char in enumerate(encrypted_text[1:-1]):
         if char.isalpha():
-            if i % 2 == 0:
-                decrypted_text += chr((ord(char) - 5 - ord('A')) % 26 + ord('A'))
+            if i % 2 == 0:  # even position
+                decrypted_text += chr((ord(char) - ord('A') - shift) % 26 + ord('A'))
             else:
                 symbols = "!@#$%^&*()_+-=[]{}|;':,.<>?/"
                 decrypted_text += symbols[ord(char) - ord('A')]
